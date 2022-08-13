@@ -1,3 +1,5 @@
+import Layout from "../components/Layout"
+
 // Integração muito interessante entre JSX e JavaScript
 export default function Jsx() {
     const titulo = <h1>JSX é um conceito central</h1>
@@ -9,14 +11,17 @@ export default function Jsx() {
 
 
     return (
-        <div>
-            {titulo}
-            {subtitulo()}
+        <Layout titulo="Entendendo o JSX">
 
-            <p>
-                {JSON.stringify({ nome: 'João', idade: 30 })}
-            </p>
-        </div>
+            <div>
+                {titulo}
+                {subtitulo()}
+
+                <p>
+                    {JSON.stringify({ nome: 'João', idade: 30 })}
+                </p>
+            </div>
+        </Layout>
     )
 }
 
