@@ -17,7 +17,7 @@ export default function Integracao() {
         mas eu vou usar o própio fetch para obter essas informaçôes
      */
     async function obterCliente() {
-        const resp = await fetch(`https://integracao-firestore.vercel.app//api/clientes/${codigo}`)
+        const resp = await fetch(`https://integracao-firestore.vercel.app/api/clientes/${codigo}`)
         const dados = await resp.json()
         setCliente(dados)
 
